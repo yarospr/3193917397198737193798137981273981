@@ -363,7 +363,7 @@ function drawBackground(surface) { if (backgroundSettings.type === 'solid') { su
 function draw_ui(surface, ball1, ball2) {
     const bar_margin = 20;
     const bar_total_width = SCREEN_WIDTH - (bar_margin * 2); 
-    const bar_height = 30;
+    const bar_height = 10;
     const spacing = 5;
     const cell_width = (bar_total_width - spacing * (MAX_HP - 1)) / MAX_HP;
     const y_pos1 = 85;
@@ -714,4 +714,5 @@ window.onload = async () => {
 </body>
 
 </html>
+
 
