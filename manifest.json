@@ -1,6 +1,6 @@
 {
-  "short_name": "Ball Crash",
-  "name": "Ball Crash Game",
+  "short_name": "BALLS BATTLE",
+  "name": "BALLS BATTLE",
   "icons": [
     {
       "src": "icon-192.png",
@@ -17,4 +17,5 @@
   "display": "fullscreen",
   "background_color": "#1a1a1a",
   "theme_color": "#00bcd4"
+
 }
