@@ -275,7 +275,7 @@ class Ball {
         if (hit_wall) { 
             this.vel.x += (Math.random() - 0.5) * 2; 
             this.vel.y += (Math.random() - 0.5) * 2; 
-            this.vel = this.vel.normalize().multiply(7 + Math.random() * 5); 
+            this.vel = this.vel.normalize().multiply(6 + Math.random() * 5); 
             trigger_shake(); 
             if (this.hp > 0) playSound('hit_border'); 
         } 
@@ -366,8 +366,8 @@ function draw_ui(surface, ball1, ball2) {
     const bar_height = 10;
     const spacing = 5;
     const cell_width = (bar_total_width - spacing * (MAX_HP - 1)) / MAX_HP;
-    const y_pos1 = 125;
-    const y_pos2 = 190;
+    const y_pos1 = 185;
+    const y_pos2 = 250;
     const x_start = bar_margin;
     surface.font = "bold 22px Arial";
     surface.textAlign = "center";
