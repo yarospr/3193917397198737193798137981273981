@@ -270,7 +270,7 @@ class Ball {
         if (this.pos.x - this.radius < bounds.left) { this.pos.x = bounds.left + this.radius; this.vel.x *= -1; hit_wall = true; } 
         if (this.pos.x + this.radius > bounds.right) { this.pos.x = bounds.right - this.radius; this.vel.x *= -1; hit_wall = true; } 
         if (this.pos.y - this.radius < bounds.top) { this.pos.y = bounds.top + this.radius; this.vel.y *= -1; hit_wall = true; } 
-        if (this.pos.y + this.radius > bounds.bottom) { this.pos.y = bounds.bottom + this.radius; this.vel.y *= -1; hit_wall = true; } 
+        if (this.pos.y + this.radius > bounds.bottom) { this.pos.y = bounds.bottom - this.radius; this.vel.y *= -1; hit_wall = true; } 
         
         if (hit_wall) { 
             this.vel.x += (Math.random() - 0.5) * 2; 
@@ -719,4 +719,3 @@ window.onload = async () => {
 
 </body>
 </html>
-
