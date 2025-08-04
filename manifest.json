@@ -1,21 +1,20 @@
 {
-  "short_name": "BALLS BATTLE",
   "name": "BALLS BATTLE",
+  "short_name": "BALLS BATTLE",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#1a1a1a",
+  "theme_color": "#00bcd4",
   "icons": [
     {
-      "src": "icon-192.png",
+      "src": "assets/images/icon-192.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "icon-512.png",
+      "src": "assets/images/icon-512.png",
       "type": "image/png",
       "sizes": "512x512"
     }
-  ],
-  "start_url": "index.html",
-  "display": "fullscreen",
-  "background_color": "#1a1a1a",
-  "theme_color": "#00bcd4"
-
+  ]
 }
