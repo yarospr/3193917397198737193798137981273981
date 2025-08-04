@@ -287,7 +287,7 @@ class Ball {
         if (Math.abs(this.current_scale - this.target_scale) > 0.001) { this.current_scale += (this.target_scale - this.current_scale) * 0.1; this.recreate_surface(); } 
         if (Math.abs(this.display_hp - this.hp) > 0.001) { this.display_hp += (this.hp - this.display_hp) * 0.1; } 
         this.pos = this.pos.add(this.vel); 
-        if (this.is_attacking) this.saw_angle += 5; 
+        if (this.is_attacking) this.saw_angle += 10; 
         let hit_wall = false; 
         if (this.pos.x - this.radius < bounds.left) { this.pos.x = bounds.left + this.radius; this.vel.x *= -1; hit_wall = true; } 
         if (this.pos.x + this.radius > bounds.right) { this.pos.x = bounds.right - this.radius; this.vel.x *= -1; hit_wall = true; } 
@@ -714,6 +714,7 @@ window.onload = async () => {
 </body>
 
 </html>
+
 
 
 
